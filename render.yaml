@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: omega-api
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: HUGGINGFACE_KEY
+        sync: false
